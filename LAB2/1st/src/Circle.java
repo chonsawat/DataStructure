@@ -7,15 +7,15 @@ public class Circle {
     }
 
     public double circumference(){
-        return 0;
+        return 2 * 3.14 * radius;
     }
 
     public double volume(){
-        return 0;
+        return 4.0/3 * 3.14 * Math.pow(radius,3);
     }
 
     public double getRadius(){
-        return this.radius;
+        return radius;
     }
 
     public void setRadius(double radius){
