@@ -39,6 +39,8 @@ public class Circle {
         // Radius must more than zero
         if (radius > 0)
             this.radius = radius;
+        else
+            System.out.printf("Input was lower than zero!!\nCurrent radius is: %.2f\n\n", this.radius);
     }
 
 
