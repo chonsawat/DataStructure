@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Circle {
 
     // Create Attribute
@@ -34,16 +36,22 @@ public class Circle {
 
     // Method set
     public void setRadius(double radius){
-        this.radius = radius;
+        // Radius must more than zero
+        if (radius > 0)
+            this.radius = radius;
     }
 
 
     // Method to easy calling show all values in testCircle
     public void show(){
-        System.out.printf("Area: %f\n", area());
-        System.out.printf("Circumference: %f\n", circumference());
-        System.out.printf("Volume: %f\n", volume());
-        System.out.println("Radius: " + getRadius());
+        // Create format object
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+
+        // Show all values
+        System.out.printf("Area: %.2f\n", area());
+        System.out.printf("Circumference: %.2f\n", circumference());
+        System.out.printf("Volume: %.2f\n", volume());
+        System.out.println("Radius: " + decimalFormat.format(getRadius()));
     }
 
 }
