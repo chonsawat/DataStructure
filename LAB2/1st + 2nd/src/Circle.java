@@ -3,10 +3,14 @@ public class Circle {
     // Create Attribute
     public double radius;
 
+
     // Constructor
     public Circle(double radius) {
-        this.radius = radius;
+        // Check radius must more than 0
+        if (radius > 0)
+            this.radius = radius;
     }
+
 
     // Method Calculate
     public double area(){
@@ -21,15 +25,18 @@ public class Circle {
         return 4.0/3 * Math.PI * Math.pow(radius,3);
     }
 
+
     // Method get
     public double getRadius(){
         return radius;
     }
 
+
     // Method set
     public void setRadius(double radius){
         this.radius = radius;
     }
+
 
     // Method to easy calling show all values in testCircle
     public void show(){
