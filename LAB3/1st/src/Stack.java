@@ -8,37 +8,45 @@ public class Stack {
     }
 
     void push(double item){
-        // Check stack full
-
-        top++;
-
-        // Push
+        // Check stack full & push
+        if (top == stack.length-1) {
+            System.out.println("Stack Full");
+        } else {
+            stack[++top] = item;
+        }
     }
 
     double pop(){
         // Check empty
+        if (empty()){
+            System.out.println("Can't pop because empty!!");
+            return -1;
+        }
 
-        // Pop
-        return stack[top];
+        double item = stack[top];
+        stack[top--] = 0;
+
+        return item;
     }
 
     double top(){
+        if (empty())
+            return -1;
         return stack[top];
     }
 
     boolean empty(){
-        boolean check = top == -1;
-        if (check){
-            System.out.println("Is empty!!");
-            return true;
-        }
-
-        System.out.println("Not empty!!");
-        return false;
+        return top == -1;
     }
 
     void show(){
         System.out.printf("Show %d values in stack...\nvalues: ", stack.length);
+
+        if (empty()) {
+            System.out.println("No values in stack!!");
+            return;
+        }
+
         for (int i=top; i>-1; i--){
             System.out.printf("%f\t", stack[i]);
         }
