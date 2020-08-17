@@ -38,7 +38,7 @@ public class Stack {
     }
 
     void show(){
-        System.out.println("Show all values in stack...\nvalues: ");
+        System.out.printf("Show %d values in stack...\nvalues: ", stack.length);
         for (int i=top; i>-1; i--){
             System.out.printf("%f\t", stack[i]);
         }
