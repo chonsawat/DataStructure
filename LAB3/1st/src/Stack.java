@@ -50,5 +50,6 @@ public class Stack {
         for (int i=top; i>-1; i--){
             System.out.printf("%f\t", stack[i]);
         }
+        System.out.println();
     }
 }
