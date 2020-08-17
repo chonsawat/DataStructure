@@ -17,6 +17,7 @@ public class testStack {
             System.out.print("Main menu\n1. Create Stack\n2. Push\n3. Pop\n4. Top\n5. Show\n6. Exit\nPlease choose your choice: ");
             option = scanner.nextInt();
 
+            System.out.println();
             switch (option) {
                 case 1:
                     System.out.print("Enter size of stack: ");

@@ -40,7 +40,7 @@ public class Stack {
     }
 
     void show(){
-        System.out.printf("Show %d values in stack...\nvalues: ", stack.length);
+        System.out.printf("Show values in stack size: %d\nvalues: ", stack.length);
 
         if (empty()) {
             System.out.println("No values in stack!!");
