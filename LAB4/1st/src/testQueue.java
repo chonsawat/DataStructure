@@ -26,23 +26,25 @@ public class testQueue {
 
                 case 2:
                     scanner.nextLine(); // Fix auto-enter bug
-                    System.out.print("Enqueue your name:");
-                    item = scanner.nextLine();
-                    arr.enqueue(item);
+                    arr.enqueue();
+                    System.out.println(arr);
                     break;
 
                 case 3:
-                    System.out.println("Dequeue");
+                    System.out.println("Dequeued item: " + (arr.isEmpty()?"Queue is no items!!":arr.dequeue()));
+                    System.out.println(arr);
                     break;
 
                 case 4:
-                    System.out.println("First");
-                    System.out.println(arr.isEmpty());
+                    System.out.println(arr.isEmpty()?arr.first():"First is: " + arr.first());
+                    System.out.println(arr);
+                    arr.show();
                     break;
 
                 case 5:
                     status = false;
-                    System.out.println("This program was exit!!");
+                    System.out.println("All item in queue: " + arr);
+                    System.out.println("This program was exited!!");
                     break;
             }
 
