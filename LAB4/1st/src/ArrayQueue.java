@@ -15,10 +15,12 @@ public class ArrayQueue {
         }
     }
 
+    // Check queue empty
     public boolean isEmpty(){
         return amount == 0;
     }
 
+    // Add queue at back
     public void enqueue(){
         // ถ้า Queue เต็ม
         if (amount >= Q.length) {
@@ -27,7 +29,7 @@ public class ArrayQueue {
         }
 
         // Asking name
-        System.out.print("Enqueue your name:");
+        System.out.print("Enqueue your name: ");
         item = scanner.nextLine();
 
         // ถ้ายังไม่มี front
@@ -48,28 +50,30 @@ public class ArrayQueue {
         amount++;
     }
 
+    // Pop front of queue
     public String dequeue(){
         String item;
+
+        // Check empty
         if (isEmpty())
             return null;
 
-        // Increase & Decrease
+        // Decrease amount
         amount--;
 
-        if (front > Q.length){
-            item = Q[front++%Q.length];
-            Q[front++%Q.length] = null;
-            return item;
+        if (front == Q.length-1){
+            item = Q[front];
+            Q[front] = null;
+            front = 0;
+        } else {
+            item = Q[front++];
+            Q[front-1] = null;
         }
-
-        item = Q[front];
-        Q[front++] = null;
         return item;
     }
 
     // Head of Queue
     public String first(){
-        System.out.println(front + "-" + back);
         if (isEmpty())
             return "No Item in Queue";
         return Q[front];
@@ -80,25 +84,18 @@ public class ArrayQueue {
         int tmp = front;
         if (!isEmpty()){
             System.out.print("All in queue is: ");
-            for (int i=0; i<Q.length; i++){
-                if (tmp == Q.length-1)
-                    tmp %= Q.length;
-
-                if (Q[tmp] != null)
-                    if (tmp == Q.length-1)
-                        System.out.print(Q[tmp] + " ");
-                    else
-                        System.out.print(Q[tmp++] + " ");
+            for (int i=0; i<amount; i++){
+                if (tmp == Q.length-1){
+//                    System.out.print(Q[tmp%Q.length] + " ");
+                    System.out.print(Q[tmp] + " ");
+                    tmp = 0;
+                } else {
+                    System.out.print(Q[tmp++] + " ");
+                }
             }
 
             System.out.println();
         }
     }
-
-    public String toString(){
-        return Arrays.toString(Q);
-    }
-
-
 
 }
