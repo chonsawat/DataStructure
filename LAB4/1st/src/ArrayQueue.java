@@ -86,7 +86,6 @@ public class ArrayQueue {
             System.out.print("All in queue is: ");
             for (int i=0; i<amount; i++){
                 if (tmp == Q.length-1){
-//                    System.out.print(Q[tmp%Q.length] + " ");
                     System.out.print(Q[tmp] + " ");
                     tmp = 0;
                 } else {
