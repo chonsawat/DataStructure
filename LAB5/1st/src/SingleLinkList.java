@@ -37,14 +37,14 @@ public class SingleLinkList {
     public void deleteNode(String item) {
         // ทําการเรียกใช้เมธอด searchData เพื่อค้นหาตําแหน่งที่ต้องการลบ
         if (searchData(item)) {
-        //การลบโหนดที่ตําแหน่งแรกของลิงค์ลิสต์
+            //การลบโหนดที่ตําแหน่งแรกของลิงค์ลิสต์
             if (head == curr) {
                 head = curr.getLink();
             } else if (curr.getLink() == null) {
-        // การลบโหนดที่ตําแหน่งสุดท้ายของลิงค์ลิสต์
+            // การลบโหนดที่ตําแหน่งสุดท้ายของลิงค์ลิสต์
                 prev.setLink(null);
             } else {
-        // การลบโหนดที่อยู่ระหว่างโหนดในลิงค์ลิสต์
+            // การลบโหนดที่อยู่ระหว่างโหนดในลิงค์ลิสต์
                 prev.setLink(curr.getLink());
             }
         }
