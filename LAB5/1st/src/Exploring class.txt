@@ -1,0 +1,25 @@
+ส่อง Class อาจารย์
+
+Node
+    Node() : link=null
+    Node(String) : ใส่ item และ link=null
+    Node(String, Node) : ใส่ item และ โยง Node
+
+    setItem(String) : แก้ item
+    getItem() : เอาค่า item
+    setLink(Node) : แก้ Node
+    getLink() : เอาค่า Node
+
+SingleLinkList
+    newNode : ที่อยู่
+    head : หัว
+    curr : ตัวที่อยู่
+    prev : ตัวก่อนหน้า
+
+    add(String) : สร้าง Node และ เก็บค่า
+    searchData(String) : หาข้อมูล
+    deleteNode(String) : หา และ ลบ Node
+    insertNode(String insert, String newItem) : แทรก Node
+    insertLastNode(String) : เพิ่มตำแหน่งสุดท้าย
+    showdata() : แสดงข้อมูล
+    
