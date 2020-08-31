@@ -4,6 +4,7 @@ public class testStack {
     public static void main(String[] args) {
         int option;
         boolean status = true;
+        SLinkStack stack = new SLinkStack();
         Scanner scanner = new Scanner(System.in);
 
         while(status) {
@@ -11,28 +12,36 @@ public class testStack {
             option = scanner.nextInt();
 
             switch (option) {
+                // Create Stack
                 case 1:
-                    System.out.println(1);
+                    stack = new SLinkStack();
                     break;
 
+                // Push
                 case 2:
-                    System.out.println(2);
+                    System.out.print("Please enter item you need to push: ");
+                    stack.push(scanner.next());
                     break;
 
+                // Pop
                 case 3:
-                    System.out.println(3);
+                    System.out.println(stack.empty() ? "Stack is no any items!!":("Pop value: " + stack.pop()));
                     break;
 
+                // Top
                 case 4:
-                    System.out.println(4);
+                    System.out.println(stack.empty() ? "Stack is no any items!!":("Top value: " + stack.top()));
                     break;
 
+                // Show
                 case 5:
-                    System.out.println(5);
+                    stack.show();
                     break;
 
+                // Exit
                 case 6:
-                    System.out.println(6);
+                    stack.show();
+                    System.out.println("\nThis program was ending!!");
                     status = false;
                     break;
             }
