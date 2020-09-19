@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LAB1/1st/1st.iml" filepath="$PROJECT_DIR$/LAB1/1st/1st.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB1/2nd/2nd.iml" filepath="$PROJECT_DIR$/LAB1/2nd/2nd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB1/3rd/3rd.iml" filepath="$PROJECT_DIR$/LAB1/3rd/3rd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB1/4th/4th.iml" filepath="$PROJECT_DIR$/LAB1/4th/4th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB1/5th/5th.iml" filepath="$PROJECT_DIR$/LAB1/5th/5th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DataStructure.iml" filepath="$PROJECT_DIR$/.idea/DataStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB2/LAB2.iml" filepath="$PROJECT_DIR$/LAB2/LAB2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB3/LAB3.iml" filepath="$PROJECT_DIR$/LAB3/LAB3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB4/LAB4.iml" filepath="$PROJECT_DIR$/LAB4/LAB4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LAB5/LAB5.iml" filepath="$PROJECT_DIR$/LAB5/LAB5.iml" />
+    </modules>
+  </component>
+</project>
