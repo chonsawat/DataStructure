@@ -6,8 +6,8 @@ public class InsertionSort {
 
             for(; j >= 0 && arr[j] > tmp; j--) {
                 arr[j + 1] = arr[j];
-                arr[j] = tmp;
             }
+            arr[j+1] = tmp;
         }
    }
 
@@ -18,8 +18,8 @@ public class InsertionSort {
 
             for(; j >= 0 && arr[j] < tmp; j--) {
                 arr[j + 1] = arr[j];
-                arr[j] = tmp;
             }
+            arr[j+1] = tmp;
         }
     }
 
