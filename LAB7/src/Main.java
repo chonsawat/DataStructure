@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//		BinarySearch(Data, 32);
         int option, select, size;
-        int item;
         boolean status = true;
         Scanner scanner = new Scanner(System.in);
         int Data[] = { 10, 14, 19, 26, 27, 31, 33, 35, 42, 44 }; // For lazy enter Arrays

@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class Searching {
     public static boolean BinarySearch(int Data[], int s) {
         int low, high, mid;
